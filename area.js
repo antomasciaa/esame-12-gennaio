@@ -20,4 +20,4 @@ var getArea = function area(lati){
   	}
 }
 
-module.module.exports = getArea;
+module.exports = getArea;

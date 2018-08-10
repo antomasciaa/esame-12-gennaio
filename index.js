@@ -6,7 +6,7 @@ var query = require('querystring');
 var app = express();
 
 
-app.get('./area', function(req, res){
+app.get('./index', function(req, res){
 	var lato1 = req.query.lato1;
 	var lato2 = req.query.lato2;
 	
