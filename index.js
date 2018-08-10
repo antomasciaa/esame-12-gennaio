@@ -1,17 +1,18 @@
 var express = require('express');
 var getArea = require ('./area.js');
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 1370;
 var query = require('querystring');
 
 var app = express();
 
 
-app.get('./index', function(req, res){
+app.get('/index', function(req, res){
 	var lato1 = req.query.lato1;
 	var lato2 = req.query.lato2;
+	var list = [parseInt(lato1), parseInt(lato2)]
 	
 	res.json({
-		area: getArea([parseInt(lato1), parseInt(lato2)])
+		area: getArea(list)
     });
 
 }); 
