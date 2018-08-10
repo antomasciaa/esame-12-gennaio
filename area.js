@@ -13,10 +13,10 @@ var getArea = function area(lati){
 		return -1;
 	} if(lat[0] >= 0 && lat[1] >= 0){
 		var prodotto = lat[0]*lat[1];
-    	return prodotto;
+		return prodotto;
   	} else {
-    	console.log("Error: input value needs to be positive");
-    	return -1;
+		console.log("Error: input value needs to be positive");
+		return -1;
   	}
 }
 
