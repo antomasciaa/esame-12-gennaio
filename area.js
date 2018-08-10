@@ -12,7 +12,7 @@ var getArea = function area(lati){
 		console.log("Error: input value needs to be integers");
 		return -1;
 	} if(lat[0] >= 0 && lat[1] >= 0){
-    	var prodotto = lat[0]*lat[1];
+		var prodotto = lat[0]*lat[1];
     	return prodotto;
   	} else {
     	console.log("Error: input value needs to be positive");
